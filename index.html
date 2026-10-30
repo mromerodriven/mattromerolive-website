@@ -13,7 +13,7 @@
   --ink:#0c0c0c;
   --paper:#f4f2ed;
   --white:#fafaf8;
-  --mid:#6b6868;
+  --mid:#4a4747;
   --rule:#d8d4cc;
   --red:#c8261e;
   --red-dim:#8a1a13;
@@ -45,13 +45,13 @@ nav{
 .n-right{display:flex;align-items:center;gap:2rem}
 .n-links{display:flex;gap:1.75rem;list-style:none}
 .n-links a{
-  font-family:var(--mono);font-size:0.82rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:1rem;letter-spacing:0.1em;
   text-transform:uppercase;color:var(--ink);text-decoration:none;
   transition:color .15s;
 }
 .n-links a:hover{color:var(--ink)}
 .n-cta{
-  font-family:var(--mono);font-size:0.82rem;letter-spacing:0.08em;
+  font-family:var(--mono);font-size:1rem;letter-spacing:0.08em;
   text-transform:uppercase;color:var(--paper);
   background:var(--ink);padding:0.55rem 1.2rem;
   text-decoration:none;white-space:nowrap;
@@ -74,7 +74,7 @@ nav{
 }
 .mobile-menu.open{display:flex}
 .mobile-menu a{
-  font-family:var(--mono);font-size:0.9rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:1rem;letter-spacing:0.1em;
   text-transform:uppercase;color:var(--ink);text-decoration:none;
   padding:1.1rem clamp(1.25rem,5vw,3rem);
   border-bottom:1px solid var(--rule);
@@ -115,8 +115,8 @@ nav{
 .hero-photo-caption{
   position:absolute;bottom:0;left:0;right:0;
   padding:1.5rem clamp(1rem,4vw,2rem) 1.5rem;
-  color:rgba(244,242,237,0.55);
-  font-family:var(--mono);font-size:0.6rem;letter-spacing:0.2em;
+  color:rgba(244,242,237,0.85);
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.2em;
   text-transform:uppercase;
   display:flex;align-items:flex-end;justify-content:space-between;
 }
@@ -169,7 +169,7 @@ nav{
   98%{opacity:0}
 }
 .hero-role{
-  font-family:var(--mono);font-size:0.82rem;letter-spacing:0.15em;
+  font-family:var(--mono);font-size:0.875rem;letter-spacing:0.15em;
   text-transform:uppercase;color:var(--mid);
   margin-bottom:2rem;
   display:flex;align-items:center;gap:0.75rem;
@@ -177,22 +177,24 @@ nav{
 .hero-role .r-dot{color:var(--red);font-size:1.2em}
 .hero-tagline{
   font-family:var(--serif);font-style:italic;
-  font-size:clamp(1.4rem,3vw,2.4rem);
+  font-size:clamp(1.625rem,3vw,2.5rem);
   line-height:1.2;color:var(--ink);
   margin-bottom:2.5rem;
   border-top:1px solid var(--rule);
   padding-top:1.5rem;
 }
 .hero-tagline .red{color:var(--red);font-style:normal}
+.hero-tagline .sub{display:block;font-size:0.7em;margin-top:0.75rem}
+.hero-brand{font-family:var(--body);font-size:1.25rem;font-weight:500;color:var(--red);margin:-1.25rem 0 2rem}
 .hero-desc{
-  font-size:clamp(0.9rem,1.5vw,1.05rem);
-  line-height:1.75;color:var(--mid);
-  font-weight:300;margin-bottom:2.5rem;
+  font-size:clamp(1.125rem,1.6vw,1.25rem);
+  line-height:1.7;color:var(--mid);
+  font-weight:400;margin-bottom:2.5rem;
   max-width:420px;
 }
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .btn-fill{
-  font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:1rem;letter-spacing:0.1em;
   text-transform:uppercase;text-decoration:none;
   padding:0.85rem 2rem;
   background:var(--ink);color:var(--paper);
@@ -200,7 +202,7 @@ nav{
 }
 .btn-fill:hover{background:var(--red);border-color:var(--red)}
 .btn-out{
-  font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:1rem;letter-spacing:0.1em;
   text-transform:uppercase;text-decoration:none;
   padding:0.85rem 2rem;
   background:transparent;color:var(--ink);
@@ -220,8 +222,8 @@ nav{
   white-space:nowrap;
 }
 .ticker-item{
-  font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;
-  text-transform:uppercase;color:rgba(244,242,237,0.6);
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:rgba(244,242,237,0.85);
   padding:0 2.5rem;
 }
 .ticker-item .sep{color:var(--red);margin:0 0.5rem}
@@ -231,7 +233,7 @@ nav{
 .sec{padding:5rem clamp(1.25rem,5vw,3rem);border-bottom:1px solid var(--rule)}
 .sec-inner{max-width:1200px;margin:0 auto}
 .sec-label{
-  font-family:var(--mono);font-size:0.75rem;letter-spacing:0.18em;
+  font-family:var(--mono);font-size:0.875rem;letter-spacing:0.18em;
   text-transform:uppercase;color:var(--red);
   margin-bottom:0.6rem;
 }
@@ -247,7 +249,7 @@ nav{
   display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start;
 }
 .about-text p{
-  font-size:1.05rem;line-height:1.8;color:var(--ink);
+  font-size:1.15rem;line-height:1.7;color:var(--ink);
   font-weight:300;margin-bottom:1.5rem;
 }
 .about-text p strong{font-weight:500}
@@ -258,7 +260,7 @@ nav{
 }
 .tags{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--rule)}
 .tag{
-  font-family:var(--mono);font-size:0.6rem;letter-spacing:0.08em;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.08em;
   padding:0.3rem 0.7rem;border:1px solid var(--ink);color:var(--ink);
   transition:all .12s;cursor:default;
 }
@@ -280,10 +282,10 @@ nav{
 .term-dot.y{background:#febc2e}
 .term-dot.g{background:#28c840}
 .term-title{
-  font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;
+  font-size:0.8125rem;letter-spacing:0.12em;text-transform:uppercase;
   color:#555;margin:0 auto;
 }
-.term-body{padding:1.5rem;font-size:0.82rem;line-height:1.9}
+.term-body{padding:1.5rem;font-size:0.9375rem;line-height:1.9}
 .term-line{display:flex;gap:0.75rem}
 .term-prompt{color:#444}
 .term-cmd{color:var(--green)}
@@ -318,15 +320,15 @@ nav{
 }
 .work-item:hover .work-num{color:var(--red)}
 .work-title{
-  font-family:var(--serif);font-size:1.6rem;
+  font-family:var(--serif);font-size:1.75rem;
   color:var(--ink);line-height:1.1;margin-bottom:0.4rem;
 }
 .work-sub{
-  font-family:var(--mono);font-size:0.6rem;letter-spacing:0.12em;
-  text-transform:uppercase;color:var(--mid);
+  font-size:1.125rem;line-height:1.7;
+  color:var(--mid);
 }
 .work-desc{
-  font-size:0.88rem;line-height:1.65;color:var(--mid);
+  font-size:1.125rem;line-height:1.65;color:var(--mid);
   max-width:340px;display:none;
 }
 .work-arrow{
@@ -356,15 +358,15 @@ nav{
 .link-tile:nth-child(3n){border-right:none}
 .link-tile:nth-child(n+4){border-bottom:none}
 .lt-plat{
-  font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;
-  text-transform:uppercase;color:rgba(244,242,237,0.4);transition:color .2s;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:rgba(244,242,237,0.75);transition:color .2s;
 }
 .lt-name{
   font-family:var(--serif);font-size:1.4rem;
   margin-top:auto;margin-bottom:0.3rem;
   color:var(--paper);transition:color .2s;
 }
-.lt-hint{font-size:0.78rem;color:rgba(244,242,237,0.55);line-height:1.5;transition:color .2s}
+.lt-hint{font-size:0.875rem;color:rgba(244,242,237,0.85);line-height:1.5;transition:color .2s}
 .link-tile:hover .lt-name::after{content:' →'}
 
 /* ─── TOOLS ─── */
@@ -381,7 +383,7 @@ nav{
 .tool-badge{
   position:absolute;top:0;right:1.5rem;
   background:var(--red);color:var(--paper);
-  font-family:var(--mono);font-size:0.68rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.1em;
   padding:0.25rem 0.6rem;text-transform:uppercase;
 }
 .tool-name{
@@ -389,19 +391,19 @@ nav{
   color:var(--ink);margin-bottom:0.3rem;margin-top:0.5rem;
 }
 .tool-cat{
-  font-family:var(--mono);font-size:0.72rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.1em;
   text-transform:uppercase;color:var(--mid);margin-bottom:1rem;
 }
-.tool-desc{font-size:0.95rem;line-height:1.65;color:var(--mid);margin-bottom:1.25rem}
+.tool-desc{font-size:1.125rem;line-height:1.7;color:var(--mid);margin-bottom:1.25rem}
 .tool-link{
-  font-family:var(--mono);font-size:0.75rem;letter-spacing:0.1em;
+  font-family:var(--mono);font-size:0.875rem;letter-spacing:0.1em;
   text-transform:uppercase;text-decoration:none;
   color:var(--red);border-bottom:1px solid transparent;
   padding-bottom:1px;transition:border-color .15s;
 }
 .tool-link:hover{border-color:var(--red)}
 .disc{
-  margin-top:2.5rem;font-family:var(--mono);font-size:0.78rem;
+  margin-top:2.5rem;font-family:var(--mono);font-size:0.875rem;
   letter-spacing:0.06em;color:var(--ink);
   border-top:1px solid var(--rule);padding-top:1.5rem;
 }
@@ -409,7 +411,7 @@ nav{
   display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2.5rem;
 }
 .filter-btn{
-  font-family:var(--mono);font-size:0.72rem;letter-spacing:0.08em;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.08em;
   text-transform:uppercase;padding:0.45rem 1rem;
   border:1px solid var(--ink);background:transparent;color:var(--ink);
   cursor:pointer;transition:background .15s,color .15s;
@@ -439,10 +441,10 @@ nav{
 .c-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:5rem;align-items:start}
 .c-meta{display:flex;flex-direction:column;gap:2rem}
 .c-ml{
-  font-family:var(--mono);font-size:0.72rem;letter-spacing:0.12em;
-  text-transform:uppercase;color:rgba(244,242,237,0.35);margin-bottom:0.3rem;
+  font-family:var(--mono);font-size:0.8125rem;letter-spacing:0.12em;
+  text-transform:uppercase;color:rgba(244,242,237,0.75);margin-bottom:0.3rem;
 }
-.c-mv{font-size:0.95rem;color:var(--paper);font-weight:300}
+.c-mv{font-size:1.0625rem;color:var(--paper);font-weight:300}
 .c-form{display:flex;flex-direction:column}
 .cf-row{
   display:grid;grid-template-columns:1fr 1fr;
@@ -481,14 +483,14 @@ footer{
 .f-logo .dot{color:var(--red)}
 .f-links{display:flex;gap:1.75rem;list-style:none;flex-wrap:wrap}
 .f-links a{
-  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.1em;
-  text-transform:uppercase;color:rgba(244,242,237,0.35);
+  font-family:var(--mono);font-size:0.875rem;letter-spacing:0.1em;
+  text-transform:uppercase;color:rgba(244,242,237,0.75);
   text-decoration:none;transition:color .15s;
 }
 .f-links a:hover{color:var(--paper)}
 .f-copy{
-  font-family:var(--mono);font-size:0.7rem;
-  color:rgba(244,242,237,0.22);letter-spacing:0.06em;
+  font-family:var(--mono);font-size:0.875rem;
+  color:rgba(244,242,237,0.7);letter-spacing:0.06em;
 }
 
 /* ─── MOBILE ─── */
@@ -578,13 +580,15 @@ footer{
     <h1 class="hero-name" data-text="ROMERO">ROMERO</h1>
     <div class="hero-tagline">
       The Operator Who Can't Leave<br>a <span class="red">Broken System</span> Alone.
+      <span class="sub">The person you call when something goes wrong.</span>
     </div>
+    <p class="hero-brand">Automate the work. Keep the final say.</p>
     <p class="hero-desc">
       I help organizations turn operational chaos into repeatable systems. Most business problems are process problems. My work is finding them, simplifying them, and fixing them.<br><br>Whether it’s a workflow, a team, a software platform, or an entire department. I rebuild broken systems before automating them.
     </p>
     <div class="hero-btns">
-      <a href="#work" class="btn-fill">See How I Help</a>
-      <a href="#contact" class="btn-out">Get in Touch</a>
+      <a href="#contact" class="btn-fill">Book a $450 Audit</a>
+      <a href="#work" class="btn-out">See How I Help</a>
     </div>
   </div>
 </section>
@@ -627,7 +631,7 @@ footer{
         <p>I naturally look for bottlenecks, friction, unnecessary complexity, and wasted effort. Then I start improving them. Sometimes that means redesigning a workflow. Sometimes it means organizing information. Sometimes it means implementing automation. Sometimes it means building software. <strong>The tool changes. The objective doesn’t.</strong></p>
         <p>I’ve worked across manufacturing, retail, government, public health, real estate, property management, and small business. Different industries, same pattern.</p>
         <p>At DeKalb Public Health, I inherited an IT operation with more than 600 unresolved support tickets, years of undocumented systems, and inefficiencies that had simply been accepted as permanent. Nobody had a clear picture of what was open, what was broken, or who owned what. By reorganizing the infrastructure, introducing accountability, and eliminating the bottlenecks that kept tickets from closing, the backlog dropped from over 600 to fewer than 50.</p>
-        <p>At Porch Property Group, the problems were different but the approach was the same. Redundant listing syndication eating time and budget. Lead routing that sent prospects to the wrong places. Leasing workflows that varied by whoever happened to be working that day. I cleaned up the syndication, fixed the routing, standardized the workflows, reduced the manual work, and automated major portions of the leasing lifecycle. The operation ran more efficiently and the team had better visibility into what was actually happening.</p>
+        <p>At Porch Property Group, the problems were different but the approach was the same. Redundant listing syndication eating time and budget. Lead routing that sent prospects to the wrong places. Leasing workflows that varied by whoever happened to be working that day. I cleaned up the syndication, fixed the routing, standardized the workflows, reduced the manual work, and automated major portions of the leasing lifecycle. The operation ran more efficiently and the team had better visibility into what was actually happening. Buildium was the operational backbone: tenant messages, maintenance tasks, leasing, and approvals all ran through it, and I built the workflows around it.</p>
         <p>I’m still looking for the same things I always was: the friction, the bottleneck, the process that works against the people trying to use it. <strong>I don’t believe inefficiency is inevitable. I believe most systems can work better.</strong></p>
         <div class="tags">
           <span class="tag">Manufacturing</span>
@@ -698,35 +702,30 @@ footer{
       <div class="work-item reveal">
         <div class="work-num">01</div>
         <div>
-          <div class="work-title">Operations Consulting</div>
-          <div class="work-sub">Most organizations don't have an execution problem. They have a clarity problem. I come in, map how work actually flows, find where it breaks down, and fix the underlying system before anyone touches a piece of software.</div>
+          <div class="work-title">Automation Audit — $450</div>
+          <div class="work-sub">I map your workflows and show what to fix, what to automate, and what needs a human sign-off. The full fee is credited toward a build.</div>
         </div>
         <div class="work-arrow">→</div>
       </div>
       <div class="work-item reveal">
         <div class="work-num">02</div>
         <div>
-          <div class="work-title">Process Optimization</div>
-          <div class="work-sub">Broken workflows, missing SOPs, unclear ownership, redundant steps, communication gaps. I find them, simplify them, and build something that people will actually use.</div>
+          <div class="work-title">Approval-Gated Build — $1,000–$3,000</div>
+          <div class="work-sub">I fix the process, then build the automation. Anything that moves money, messages customers, or deletes data waits for your approval.</div>
         </div>
         <div class="work-arrow">→</div>
       </div>
       <div class="work-item reveal">
         <div class="work-num">03</div>
         <div>
-          <div class="work-title">Automation Strategy</div>
-          <div class="work-sub">Automation applied to a broken process just creates faster broken. I figure out what should be automated, what should stay human, and how to connect the pieces so the whole system runs cleaner.</div>
+          <div class="work-title">Care Plan — $200/mo</div>
+          <div class="work-sub">I keep it running when apps change and make small adjustments as you grow.</div>
         </div>
         <div class="work-arrow">→</div>
       </div>
-      <div class="work-item reveal">
-        <div class="work-num">04</div>
-        <div>
-          <div class="work-title">Systems Architecture</div>
-          <div class="work-sub">Whether it's a dashboard, a workflow, an operational process, or a software tool, I design it to solve a real problem and build it to scale without adding complexity.</div>
-        </div>
-        <div class="work-arrow">→</div>
-      </div>
+    </div>
+    <div class="hero-btns" style="margin-top:2.5rem">
+      <a href="#contact" class="btn-fill">Book a $450 Audit</a>
     </div>
   </div>
 </section>
